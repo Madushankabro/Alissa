@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Hexzy
+Hello, I'M Layla
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @Prabha_sha ❤
+Maintained by @HEROGAMERS1 ❤
 """
 
 buttons = [
@@ -85,32 +85,33 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/HexzyBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="hexzy_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/Hexzylogs"),
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/laylalogs"),
         InlineKeyboardButton(
             text="ꜰᴇᴅᴇʀᴀᴛɪᴏɴ", url=f"https://t.me/AntiRippingOrganization/410"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Hexzy
+`Hi.. I'M` Layla
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by  [HiTech Rocket](t.me/HiTechRocket)"""
+Powered by :- [Awesome Bots](t.me/Laylalist)"""
 
-Hexzy_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
 
-DONATE_STRING = """Hey, glad to hear you want to donate!
- Supporting isnt always financial! [HiTech Rocket](t.me/HiTechRockets) \
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project [Hero](t.me/HEROGAMERS1) \
+ Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -354,9 +355,9 @@ def help_button(update, context):
 @run_async
 def layla_about_callback(update, context):
     query = update.callback_query
-    if query.data == "hexzy_":
+    if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Hexzy*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -364,22 +365,22 @@ def layla_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Bots @HiTechRocket
-                 \n❍ Support Group @HiTechRocket
-                 \n❍ Assistant @HexzyAssistant.
-                 \nHere is the [💾Repository](https://github.com/Prabhasha-p/HexzyBot).
-                 \n\nIf you have any question about Hexzy, let us know at .""",
+                 \n❍ Awesome Bots @LaylaList
+                 \n❍ Support Group @AwesomeSupport
+                 \n❍ Assistant @LaylaAssistant.
+                 \nHere is the [💾Repository](https://github.com/QueenArzoo/HexzyBot).
+                 \n\nIf you have any question about Layla, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🏘Home ", callback_data="hexzy_back")
+                    InlineKeyboardButton(text="Back", callback_data="layla_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "hexzy_back":
+    elif query.data == "layla_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -394,8 +395,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Hexzy*
-                 \nHere is the [Source Code](https://github.com/Prabhasha-p/HexzyBot) .""",
+            text=""" Hi..🤗 I'm *Layla*
+                 \nHere is the [Source Code](https://github.com/QueenArzoo/HexzyBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -690,7 +691,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😌✊")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -707,7 +708,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"hexzy_")
+    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"layla_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
