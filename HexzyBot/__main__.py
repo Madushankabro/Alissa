@@ -381,7 +381,7 @@ def layla_about_callback(update, context):
             ),
         )
     elif query.data == "layla_back":
-        query.message.edit_text(
+        query.message.edit_photo(
                 Hexzy_IMG,
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
