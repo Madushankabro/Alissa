@@ -110,7 +110,7 @@ Powered by  [HiTech Rocket](t.me/HiTechRocket)"""
 Hexzy_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-ැ Supporting isnt always financial! [HiTech Rocket](t.me/HiTechRockets) \
+ Supporting isnt always financial! [HiTech Rocket](t.me/HiTechRockets) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -213,7 +213,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_text(
+            update.effective_message.reply_photo(
+                Hexzy_IMG,
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
