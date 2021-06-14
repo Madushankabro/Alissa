@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                 Hexzy_IMG,
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 timeout=60,
             )
     else:
