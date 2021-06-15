@@ -73,8 +73,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
-Hello, I'M [Hexzy](https://telegra.ph/file/9f06565978a17c20794c7.jpg)\n
+PM_START_TEXT = f"""
+Hello, \n I'M [Hexzy](https://telegra.ph/file/9f06565978a17c20794c7.jpg)\n
 Maintained by @ImPrabhasha ❤
 """
 
@@ -102,7 +102,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Hexzy  [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
+`Hi.. I'M` Hexzy 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Powered by @HiTechRocket """
 
@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.HTML,
+                parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
