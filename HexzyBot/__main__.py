@@ -372,12 +372,12 @@ def hexzy_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Home🏘", callback_data="layla_back")
+                    InlineKeyboardButton(text="Home🏘", callback_data="hexzy_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "layla_back":
+    elif query.data == "hexzy_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
