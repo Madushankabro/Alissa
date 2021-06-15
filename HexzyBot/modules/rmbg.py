@@ -10,6 +10,7 @@ from HexzyBot.config import get_str_key
 from HexzyBot.events import register
 from HexzyBot.telethon import tbot
 
+
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"
 
@@ -25,6 +26,11 @@ async def is_register_admin(chat, user):
     if isinstance(chat, types.InputPeerUser):
         return True
 
+
+  __help__ = """
+ ❍ /rmbg  :  Reply to a Image For Remove Its Background
+ """
+__mod_name__ = "⚡️Remove-BG⚡️"
 
 @register(pattern="^/rmbg")
 async def _(event):
@@ -97,7 +103,3 @@ def ReTrieveFile(input_file_name):
     )
     return r
 
-  __help__ = """
- ❍ /rmbg  :  Reply to a Image For Remove Its Background
- """
-__mod_name__ = "⚡️Remove-BG⚡️"
