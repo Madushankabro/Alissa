@@ -153,3 +153,9 @@ async def _(event):
     required_string = "Successfully Kicked **{}** users"
     await event.reply(required_string.format(c))
 
+__help__ = """
+ ❍ /zombies : Searching For Deleted Account
+ ❍ /zombies clean :  Clean The Deleted Account In The Group 
+ ❍ /kickthefools :  Kicking The Foolers In Group
+ """
+__mod_name__ = "⚡️zombies⚡️"
