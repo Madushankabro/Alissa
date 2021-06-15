@@ -84,7 +84,7 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/HexzyBot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="hexzy_"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
@@ -350,9 +350,9 @@ def help_button(update, context):
 
 
 @run_async
-def layla_about_callback(update, context):
+def hexzy_about_callback(update, context):
     query = update.callback_query
-    if query.data == "layla_":
+    if query.data == "hexzy_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Hexzy*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
@@ -705,7 +705,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"layla_")
+    about_callback_handler = CallbackQueryHandler(hexzy_about_callback, pattern=r"hexzy_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
