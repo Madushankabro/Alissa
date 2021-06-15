@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Hexzy [­­­­­­­­­­­](https://telegra.ph/file/d66fde4698d693cdac4b4.jpg)
+Hello, I'M Hexzy    [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
 Maintained by @ImPrabhasha ❤
 """
 
@@ -102,7 +102,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Hexzy
+`Hi.. I'M` Hexzy  [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Powered by @HiTechRocket """
 
