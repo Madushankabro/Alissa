@@ -25,13 +25,7 @@ async def is_register_admin(chat, user):
         )
     if isinstance(chat, types.InputPeerUser):
         return True
-
-
-  __help__ = """
- ❍ /rmbg  :  Reply to a Image For Remove Its Background
- """
-__mod_name__ = "⚡️Remove-BG⚡️"
-
+    
 @register(pattern="^/rmbg")
 async def _(event):
     HELP_STR = "use `/rmbg` as reply to a media"
