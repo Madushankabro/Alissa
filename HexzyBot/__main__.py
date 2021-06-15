@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M [Hexzy](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
+Hello, I'M [Hexzy](https://telegra.ph/file/9f06565978a17c20794c7.jpg)\n
 Maintained by @ImPrabhasha ❤
 """
 
@@ -105,8 +105,6 @@ HELP_STRINGS = """
 `Hi.. I'M` Hexzy  [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Powered by @HiTechRocket """
-
-Hexzy_IMG = "https://telegra.ph/file/d66fde4698d693cdac4b4.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
  You can support the project Of [𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖 •••](t.me/Prabha_sha) \
