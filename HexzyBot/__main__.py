@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Hexzy 
+Hello, I'M Hexzy [­­­­­­­­­­­](https://telegra.ph/file/d66fde4698d693cdac4b4.jpg)
 Maintained by @ImPrabhasha ❤
 """
 
@@ -96,7 +96,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_module"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_back"),
     ],
 ]
 
@@ -213,8 +213,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_photo(
-                Hexzy_IMG,
+            update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.HTML,
