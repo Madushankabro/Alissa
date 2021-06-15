@@ -7,8 +7,8 @@ from telethon import types
 from telethon.tl import functions
 
 from HexzyBot.config import get_str_key
-from HexzyBot.services.events import register
-from HexzyBot.services.telethon import tbot
+from HexzyBot.events import register
+from HexzyBot.telethon import tbot
 
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"
@@ -96,6 +96,7 @@ def ReTrieveFile(input_file_name):
         stream=True,
     )
     return r
+
   __help__ = """
  ❍ /rmbg  :  Reply to a Image For Remove Its Background
  """
