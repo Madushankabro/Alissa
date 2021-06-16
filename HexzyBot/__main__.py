@@ -29,6 +29,7 @@ from HexzyBot import (
 from HexzyBot.modules import ALL_MODULES
 from HexzyBot.modules.helper_funcs.chat_status import is_user_admin
 from HexzyBot.modules.helper_funcs.misc import paginate_modules
+from HexzyBot.modules.sudoers import bot_sys_stats
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
