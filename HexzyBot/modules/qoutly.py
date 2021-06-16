@@ -27,8 +27,8 @@ async def process(msg, user, client, reply, replied=None):
     if not os.path.isdir("resources"):
         os.mkdir("resources", 0o755)
         urllib.request.urlretrieve(
-            "https://github.com/erenmetesar/modules-repo/raw/master/Roboto-Regular.ttf",
-            "resources/Roboto-Regular.ttf",
+            "https://github.com/prabhasha-p/modules-repo/blob/master/Hexzy.ttf",
+            "resources/Hexzy.ttf",
         )
         urllib.request.urlretrieve(
             "https://github.com/erenmetesar/modules-repo/raw/master/Quivira.otf",
@@ -48,7 +48,7 @@ async def process(msg, user, client, reply, replied=None):
         )
 
     # Importıng fonts and gettings the size of text
-    font = ImageFont.truetype("resources/Roboto-Medium.ttf", 43, encoding="utf-16")
+    font = ImageFont.truetype("resources/Hexzy.ttf", 43, encoding="utf-16")
     font2 = ImageFont.truetype("resources/Roboto-Regular.ttf", 33, encoding="utf-16")
     mono = ImageFont.truetype("resources/DroidSansMono.ttf", 30, encoding="utf-16")
     italic = ImageFont.truetype("resources/Roboto-Italic.ttf", 33, encoding="utf-16")
@@ -275,7 +275,7 @@ async def process(msg, user, client, reply, replied=None):
             for offset, length in link.items():
                 if index in range(offset, length):
                     font2 = ImageFont.truetype(
-                        "resources/Roboto-Regular.ttf", 30, encoding="utf-16"
+                        "resources/Hexzy.ttf", 30, encoding="utf-16"
                     )
                     textcolor = "#898989"
             if letter in emoji.UNICODE_EMOJI:
@@ -401,7 +401,7 @@ async def transparent(emoji):
 
 
 async def replied_user(draw, tot, text, maxlength, title):
-    namefont = ImageFont.truetype("resources/Roboto-Medium.ttf", 38)
+    namefont = ImageFont.truetype("resources/Hexzy.ttf", 38)
     namefallback = ImageFont.truetype("resources/Quivira.otf", 38)
     textfont = ImageFont.truetype("resources/Roboto-Regular.ttf", 32)
     textfallback = ImageFont.truetype("resources/Roboto-Medium.ttf", 38)
