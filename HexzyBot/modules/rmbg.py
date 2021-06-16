@@ -8,7 +8,7 @@ from telethon.tl import functions
 
 from HexzyBot.config import get_str_key
 from HexzyBot.events import register
-from HexzyBot.telethon import tbot
+from HexzyBot.pyrogramee.telethon import tbot
 
 
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
