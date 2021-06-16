@@ -3,6 +3,7 @@ import time
 import re
 from sys import argv
 from typing import Optional
+from pyrogram import filters, idle
 
 from HexzyBot import (
     ALLOW_EXCL,
