@@ -21,6 +21,7 @@ from HexzyBot import (
     telethn,
     pbot,
     updater,
+    app
 )
 
 # needed to dynamically load modules
@@ -386,10 +387,10 @@ def hexzy_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-@pbot.on_callback_query(filters.regex("stats_callback"))
+@app.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = await bot_sys_stats()
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
     
     
 @run_async
