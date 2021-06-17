@@ -1,3 +1,5 @@
+import os
+import sys
 from envparse import env
 from HexzyBot import LOGGER
 
