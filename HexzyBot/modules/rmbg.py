@@ -13,12 +13,6 @@ from HexzyBot.telethon import tbot
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"
 
-__mod_name__ = "⚡️Remove-Bg⚡️"
-
-__help__ = """
-**Available Commands**
- ❍ /rmbg [phone no]: Remove Background Of Replied Image  
- """
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
