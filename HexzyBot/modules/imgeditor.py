@@ -64,7 +64,7 @@ lel = 00000000
 async def photo(client: Client, message: Message):
     try:
         if not message.reply_to_message.photo:
-            await client.reply_text("Reply to an image man!ㅤㅤ")
+            await message.reply_text("Reply to an image Man 😌 ", quote=True)
             return
     except:
         return
