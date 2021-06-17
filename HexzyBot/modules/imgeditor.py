@@ -56,7 +56,7 @@ from HexzyBot.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from HexzyBot.services.pyrogram import pbot as Client
+from HexzyBot.pyrogramee.pyrogram import Hxy as Client
 
 lel = 00000000
 # pylint:disable=import-error
