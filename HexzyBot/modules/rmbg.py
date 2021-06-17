@@ -102,3 +102,4 @@ def ReTrieveFile(input_file_name):
 __help__ = """
 **Available Commands**
  ❍ /rmbg [phone no]: Remove Background Of Replied Image  
+ """
