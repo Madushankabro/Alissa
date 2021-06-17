@@ -3,7 +3,6 @@ emoji
 lxml
 wget
 gtts
-random
 urllib
 faker
 youtube_dl
