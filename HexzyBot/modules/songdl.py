@@ -84,6 +84,7 @@ def song(client, message):
 @bot.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(bot,message: Message):
     global is_downloading
+    if is_downloading:
         await message.reply_text("Another download is in progress, try again after sometime.")
         return
 
