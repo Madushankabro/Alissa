@@ -23,11 +23,10 @@ GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
+    pablo = await message.reply_text("`Getting {urlissed} From Youtube Servers. Please Wait.`"
     )
     if not urlissed:
-        await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
+        await pablo.edit("`/song Song Name`\n `/music Track Title`")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
