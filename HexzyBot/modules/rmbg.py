@@ -13,7 +13,7 @@ from HexzyBot.telethon import tbot
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
 TEMP_DOWNLOAD_DIRECTORY = "./"
 
-  __mod_name__ = "⚡️RM-BG⚡️"
+__mod_name__ = "⚡️Remove-Bg⚡️"
 
 __help__ = """
 **Available Commands**
