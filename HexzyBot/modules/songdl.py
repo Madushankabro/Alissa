@@ -9,7 +9,6 @@ import wget
 
 from youtubesearchpython import SearchVideos
 from pyrogram.types import Chat, Message, User
-from string import botz as bot
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
