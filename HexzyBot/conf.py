@@ -3,7 +3,7 @@ import sys
 from envparse import env
 from HexzyBot import LOGGER
 
-from Hexzy.utils.logger import log
+from HexzyBot.utils.logger import log
 
 DEFAULTS = {
     "LOAD_MODULES": True,
