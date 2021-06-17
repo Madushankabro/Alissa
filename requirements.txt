@@ -3,7 +3,11 @@ emoji
 lxml
 wget
 gtts
+math
+random
+urllib
 faker
+youtube_dl
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
@@ -12,6 +16,7 @@ psycopg2-binary
 feedparser
 hachoir
 pynewtonmath
+Python_ARQ
 spongemock
 python-arq
 zalgo-text
