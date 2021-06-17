@@ -3,7 +3,6 @@ emoji
 lxml
 wget
 gtts
-urllib
 faker
 youtube_dl
 beautifulsoup4
