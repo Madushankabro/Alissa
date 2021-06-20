@@ -16,7 +16,7 @@ from pyrogram import filters
 from HexzyBot import (bot_start_time, DEV_USERS, pbot)
 from HexzyBot.utils import formatter
 
-__mod_name__ = "⚡️Sudo⚡️"
+__mod_name__ = "⚡️Sudoers⚡️"
 
 __help__ = """
 *Only for group owner:*
