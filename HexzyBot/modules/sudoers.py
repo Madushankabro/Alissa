@@ -10,7 +10,6 @@ import os
 import subprocess
 import time
 
-from HexzyBot import (DEV_USERS, pbot)
 import psutil
 from pyrogram import filters
 
