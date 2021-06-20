@@ -10,10 +10,11 @@ import os
 import subprocess
 import time
 
+from HexzyBot import (DEV_USERS, pbot)
 import psutil
 from pyrogram import filters
 
-from HexzyBot import bot_start_time
+from HexzyBot import (bot_start_time, DEV_USERS, pbot)
 from HexzyBot.utils import formatter
 
 
@@ -36,7 +37,7 @@ async def bot_sys_stats():
     disk = psutil.disk_usage("/").percent
     process = psutil.Process(os.getpid())
     stats = f"""
-root@Prabha_sha:~cd HexzyBot 
+root@Prabha_sha:~$ HexzyBot 
 ------------------
 UPTIME: {formatter.get_readable_time((bot_uptime))}
 BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB
@@ -46,3 +47,23 @@ DISK: {disk}%
 """
     return stats
 
+@pbot.on_message(
+    filters.command("broadcast") & filters.user(DEV_USERS) & ~filters.edited
+)
+@capture_err
+async def broadcast_message(_, message):
+    if len(message.command) < 2:
+        return await message.reply_text("**Usage**:\n/broadcast [MESSAGE]")
+    text = message.text.split(None, 1)[1]
+    sent = 0
+    chats = []
+    schats = await get_served_chats()
+    for chat in schats:
+        chats.append(int(chat["chat_id"]))
+    for i in chats:
+        try:
+            await app.send_message(i, text=text)
+            sent += 1
+        except Exception:
+            pass
+    await message.reply_text(f"**Broadcasted Message In {sent} Chats.**")
