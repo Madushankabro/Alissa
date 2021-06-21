@@ -7,6 +7,7 @@ import spamwatch
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
+from aiohttp import ClientSession
 
 StartTime = time.time()
 
@@ -189,7 +190,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-
+aiohttpsession = ClientSession()
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Hexzy", API_ID, API_HASH)
 pbot = Client("Hexzypbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
