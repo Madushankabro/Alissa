@@ -2,7 +2,7 @@ import os
 
 from pyrogram import filters
 
-from HexzyBot import app
+from HexzyBot import pbot
 from HexzyBot.core.decorators.errors import capture_err
 from HexzyBot.utils.functions import make_carbon
 
