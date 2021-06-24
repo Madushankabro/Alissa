@@ -2,7 +2,7 @@
 # Hexzy Bot
 
 ### Fork & Give Me Star ⭐️ ⭐️ ⭐️ ⭐️ 
-# 🤩🤩
+# 🤩🤩🤩
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 <p align="center"><a href="https://t.me/HitechRocket"><img src="https://telegra.ph/file/b41dfb16ec665a841f884.png" width="800"></a></p>
