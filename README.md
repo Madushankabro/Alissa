@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>🥳 Hexzy  🥳</b></h1>
+<h1 align="center"> # 🤩 Hexzy  🤩
 
 <h4 align="center">A Powerful, Smart And Advance  Group Manager Bot On Telegram <br> ... Written with AioGram , Pyrogram , Telethon and Python  ...</h4>
 
