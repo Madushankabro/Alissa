@@ -1,5 +1,7 @@
 
-# Hexzy Bot
+<h1 align="center"><b>🥳 Hexzy  🥳</b></h1>
+
+<h4 align="center">A Powerful, Smart And Advance  Group Manager Bot On Telegram <br> ... Written with AioGram , Pyrogram , Telethon and Python  ...</h4>
 
 ### Fork & Give Me Star ⭐️ ⭐️ ⭐️ ⭐️ 
 # 🤩🤩🤩
